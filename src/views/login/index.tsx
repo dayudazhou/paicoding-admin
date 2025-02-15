@@ -1,5 +1,5 @@
 import loginLeft from "@/assets/images/login_left.png";
-import logo from "@/assets/images/logo.svg";
+import logo from "@/assets/images/logo(delete).svg";
 import SwitchDark from "@/components/SwitchDark";
 import LoginForm from "./components/LoginForm";
 

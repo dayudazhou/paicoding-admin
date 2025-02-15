@@ -331,44 +331,44 @@ const Zsxqlist: FC<IProps> = props => {
 				);
 			}
 		},
-		{
-			title: "AI策略",
-			dataIndex: "strategy",
-			key: "strategy",
-			width: 110,
-			render(value) {
-				const desc = UserAiStrategy[value] || "绑定" + value;
-				// 如果 desc 的长度大于 5，那么就截取前 5 个字符
-				let len = desc.length;
-				if (len > 8) {
-					len = 8
-				}
-				return (
-					<>
-						<Tag color={colorStrategyMap[value]}>{desc.slice(2, len)}</Tag>
-					</>
-				);
-			}
-		},
-		{
-			title: "邀请人数",
-			dataIndex: "inviteNum",
-			key: "inviteNum",
-			width: 80,
-			render(value) {
-				return (
-					<>
-						<Badge count={value} showZero color="#faad14" />
-					</>
-				);
-			}
-		},
-		{
-			title: "邀请编号",
-			dataIndex: "inviteCode",
-			key: "inviteCode",
-			width: 80,
-		},
+		// {
+		// 	title: "AI策略",
+		// 	dataIndex: "strategy",
+		// 	key: "strategy",
+		// 	width: 110,
+		// 	render(value) {
+		// 		const desc = UserAiStrategy[value] || "绑定" + value;
+		// 		// 如果 desc 的长度大于 5，那么就截取前 5 个字符
+		// 		let len = desc.length;
+		// 		if (len > 8) {
+		// 			len = 8
+		// 		}
+		// 		return (
+		// 			<>
+		// 				<Tag color={colorStrategyMap[value]}>{desc.slice(2, len)}</Tag>
+		// 			</>
+		// 		);
+		// 	}
+		// },
+		// {
+		// 	title: "邀请人数",
+		// 	dataIndex: "inviteNum",
+		// 	key: "inviteNum",
+		// 	width: 80,
+		// 	render(value) {
+		// 		return (
+		// 			<>
+		// 				<Badge count={value} showZero color="#faad14" />
+		// 			</>
+		// 		);
+		// 	}
+		// },
+		// {
+		// 	title: "邀请编号",
+		// 	dataIndex: "inviteCode",
+		// 	key: "inviteCode",
+		// 	width: 80,
+		// },
 		{
 			title: "状态",
 			dataIndex: "state",

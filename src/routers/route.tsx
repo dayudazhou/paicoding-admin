@@ -14,12 +14,12 @@ import {
 } from "@ant-design/icons";
 
 export const currentMenuList = [
-	{ key: "/statistics/index", icon: <LineChartOutlined />, children: undefined, label: "数据统计" },
+//	{ key: "/statistics/index", icon: <LineChartOutlined />, children: undefined, label: "数据统计" },
 	{ key: "/config/index", icon: <CalendarOutlined />, children: undefined, label: "运营配置" },
 	{ key: "/global/index", icon: <SettingOutlined />, children: undefined, label: "全局配置" },
 	{ key: "/category/index", icon: <BarsOutlined />, children: undefined, label: "分类管理" },
 	{ key: "/tag/index", icon: <TagsOutlined />, children: undefined, label: "标签管理" },
-	{ key: "/resume/index", icon: <FileTextOutlined />, children: undefined, label: "简历管理" },
+	// { key: "/resume/index", icon: <FileTextOutlined />, children: undefined, label: "简历管理" },
 	{
 		key: "/article",
 		icon: <ReadOutlined />,

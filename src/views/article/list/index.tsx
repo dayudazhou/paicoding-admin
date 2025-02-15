@@ -149,13 +149,13 @@ const Article: FC<IProps> = props => {
 	const handleOperate = async (articleId: number, operateType: number) => {
 		let operateDesc = "";
 		if (operateType === 4) {
-			operateDesc = "取消置顶";
-		} else if (operateType === 3) {
-			operateDesc = "置顶";
-		} else if (operateType === 2) {
 			operateDesc = "取消推荐";
-		} else if (operateType === 1) {
+		} else if (operateType === 3) {
 			operateDesc = "推荐";
+		} else if (operateType === 2) {
+			operateDesc = "取消置顶";
+		} else if (operateType === 1) {
+			operateDesc = "置顶";
 		}
 		
 		const { status } = await operateArticleApi({ articleId, operateType });
@@ -271,7 +271,7 @@ const Article: FC<IProps> = props => {
 			}
 		},
 		{
-			title: "置顶",
+			title: "推荐",
 			dataIndex: "toppingStat",
 			key: "toppingStat",
 			render(_, item) {
@@ -287,7 +287,7 @@ const Article: FC<IProps> = props => {
 			}
 		},
 		{
-			title: "推荐",
+			title: "置顶",
 			dataIndex: "officalStat",
 			key: "officalStat",
 			render(_, item) {
